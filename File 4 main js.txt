@@ -1,0 +1,199 @@
+File 4: main.js
+
+
+// Wait for DOM to load
+document.addEventListener('DOMContentLoaded', function() {
+// Initialize particles.js for hero section
+if (document.getElementById('particles-js')) {
+particlesJS('particles-js', {
+particles: {
+number: {
+value: 80,
+density: {
+enable: true,
+value_area: 800
+}
+},
+color: {
+value: "#4f46e5"
+},
+shape: {
+type: "circle",
+stroke: {
+width: 0,
+color: "#000000"
+},
+},
+opacity: {
+value: 0.5,
+random: true,
+anim: {
+enable: true,
+speed: 1,
+opacity_min: 0.1,
+sync: false
+}
+},
+size: {
+value: 3,
+random: true,
+anim: {
+enable: true,
+speed: 2,
+size_min: 0.1,
+sync: false
+}
+},
+line_linked: {
+enable: true,
+distance: 150,
+color: "#4f46e5",
+opacity: 0.4,
+width: 1
+},
+move: {
+enable: true,
+speed: 1,
+direction: "none",
+random: true,
+straight: false,
+out_mode: "out",
+bounce: false,
+}
+},
+interactivity: {
+detect_on: "canvas",
+events: {
+onhover: {
+enable: true,
+mode: "grab"
+},
+onclick: {
+enable: true,
+mode: "push"
+},
+resize: true
+},
+modes: {
+grab: {
+distance: 140,
+line_linked: {
+opacity: 1
+}
+},
+push: {
+particles_nb: 4
+}
+}
+},
+retina_detect: true
+});
+}
+
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navbarNav = document.querySelector('.navbar-nav');
+
+if (menuToggle && navbarNav) {
+menuToggle.addEventListener('click', function() {
+navbarNav.classList.toggle('active');
+menuToggle.classList.toggle('active');
+});
+}
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 100,
+behavior: 'smooth'
+});
+
+// Close mobile menu if open
+if (navbarNav && navbarNav.classList.contains('active')) {
+navbarNav.classList.remove('active');
+menuToggle.classList.remove('active');
+}
+}
+});
+});
+
+// FAQ accordion
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+const question = item.querySelector('.faq-question');
+
+question.addEventListener('click', () => {
+const isActive = item.classList.contains('active');
+
+// Close all FAQ items
+faqItems.forEach(faqItem => {
+faqItem.classList.remove('active');
+});
+
+// Open clicked item if it wasn't already open
+if (!isActive) {
+item.classList.add('active');
+}
+});
+});
+
+// Waitlist form submission
+const waitlistForm = document.getElementById('waitlist-form');
+const successModal = document.getElementById('success-modal');
+
+if (waitlistForm) {
+waitlistForm.addEventListener('submit', function(e) {
+e.preventDefault();
+
+// In a real implementation, you would send the form data to your server
+// For now, we'll just show the success modal
+if (successModal) {
+successModal.style.display = 'flex';
+}
+
+// Reset form
+waitlistForm.reset();
+});
+}
+
+// Modal close buttons
+const modalCloseBtns = document.querySelectorAll('.modal-close, .modal-close-btn');
+
+modalCloseBtns.forEach(btn => {
+btn.addEventListener('click', function() {
+const modal = this.closest('.modal');
+if (modal) {
+modal.style.display = 'none';
+}
+});
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', function(e) {
+if (e.target.classList.contains('modal')) {
+e.target.style.display = 'none';
+}
+});
+
+// Navbar scroll effect
+const navbar = document.querySelector('.navbar');
+
+if (navbar) {
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+});
+}
+});

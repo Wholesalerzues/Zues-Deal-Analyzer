@@ -1,0 +1,83 @@
+File 5: subscription.js
+
+
+// Wait for DOM to load
+document.addEventListener('DOMContentLoaded', function() {
+// Pricing toggle functionality
+const pricingToggle = document.getElementById('pricing-toggle');
+const pricingAmounts = document.querySelectorAll('.amount');
+const pricingPeriods = document.querySelectorAll('.period');
+
+// Original monthly prices
+const monthlyPrices = ['29', '79', '149'];
+// Annual prices (20% discount)
+const annualPrices = ['23', '63', '119'];
+
+if (pricingToggle) {
+pricingToggle.addEventListener('change', function() {
+const isAnnual = this.checked;
+
+pricingAmounts.forEach((amount, index) => {
+// Update price amount
+amount.textContent = isAnnual ? annualPrices[index] : monthlyPrices[index];
+
+// Update period text
+if (pricingPeriods[index]) {
+pricingPeriods[index].textContent = isAnnual ? '/month (billed annually)' : '/month';
+}
+});
+});
+}
+
+// Subscribe buttons
+const subscribeButtons = document.querySelectorAll('.subscribe-btn');
+const subscriptionModal = document.getElementById('subscription-modal');
+const subPlanSelect = document.getElementById('sub-plan');
+
+if (subscribeButtons.length && subscriptionModal && subPlanSelect) {
+subscribeButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+e.preventDefault();
+
+// Get the plan from data attribute
+const plan = this.getAttribute('data-plan');
+
+// Set the selected plan in the dropdown
+for (let i = 0; i < subPlanSelect.options.length; i++) {
+if (subPlanSelect.options[i].value === plan) {
+subPlanSelect.selectedIndex = i;
+break;
+}
+}
+
+// Show the subscription modal
+subscriptionModal.style.display = 'flex';
+});
+});
+}
+
+// Subscription form submission
+const subscriptionForm = document.getElementById('subscription-form');
+
+if (subscriptionForm && successModal) {
+subscriptionForm.addEventListener('submit', function(e) {
+e.preventDefault();
+
+// In a real implementation, you would send the form data to your server
+// and handle payment processing
+
+// Close subscription modal
+if (subscriptionModal) {
+subscriptionModal.style.display = 'none';
+}
+
+// Show success modal
+if (successModal) {
+successModal.style.display = 'flex';
+}
+
+// Reset form
+subscriptionForm.reset();
+});
+}
+});

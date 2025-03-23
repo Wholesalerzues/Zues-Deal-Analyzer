@@ -1,0 +1,637 @@
+File 1: index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeus Deal Analyzer | Wholesaling Real Estate Calculator</title>
+<meta name="description" content="The Zeus Deal Analyzer is a powerful tool for real estate wholesalers to analyze deals, calculate maximum allowable offers, and make informed investment decisions.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<div class="container">
+<a href="#" class="navbar-brand">
+<span class="text-gradient">Zeus</span> Deal Analyzer
+</a>
+<div class="navbar-nav">
+<a href="#features" class="nav-link">Features</a>
+<a href="#how-it-works" class="nav-link">How It Works</a>
+<a href="#pricing" class="nav-link">Pricing</a>
+<a href="#waitlist" class="nav-link">Join Waitlist</a>
+</div>
+<button class="menu-toggle" aria-label="Toggle menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<h1>REVOLUTIONIZE YOUR <span class="text-gradient">WHOLESALING</span> BUSINESS</h1>
+<p class="lead">The Zeus Deal Analyzer helps real estate wholesalers make smarter investment decisions with lightning-fast deal analysis and maximum allowable offer calculations.</p>
+<div class="hero-cta">
+<a href="#waitlist" class="btn btn-accent btn-icon">
+<span>Join the Waitlist</span>
+<i class="fas fa-arrow-right"></i>
+</a>
+<a href="#features" class="btn btn-secondary">Explore Features</a>
+</div>
+</div>
+<div class="hero-image">
+<div class="image-container float">
+<!-- Hero image will be added here -->
+</div>
+</div>
+</div>
+<div class="hero-particles" id="particles-js"></div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+<div class="container">
+<div class="section-header">
+<h2>POWERFUL <span class="text-gradient">FEATURES</span></h2>
+<p>Everything you need to analyze deals and maximize your profits</p>
+</div>
+<div class="features-grid">
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-calculator"></i>
+</div>
+<h3>Maximum Allowable Offer</h3>
+<p>Calculate the highest price you can offer sellers while maintaining your desired profit margins.</p>
+</div>
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-search-dollar"></i>
+</div>
+<h3>Comps Analysis</h3>
+<p>Access recent sales data and rental comps to accurately estimate ARV and potential rents.</p>
+</div>
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-tools"></i>
+</div>
+<h3>Repair Estimator</h3>
+<p>Quickly estimate repair costs with our detailed repair calculator to ensure accurate deal analysis.</p>
+</div>
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-chart-line"></i>
+</div>
+<h3>Profit Projections</h3>
+<p>View detailed profit projections for you and your buyers to make informed decisions.</p>
+</div>
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-file-contract"></i>
+</div>
+<h3>Professional Reports</h3>
+<p>Generate white-labeled professional reports to share with potential buyers and investors.</p>
+</div>
+<div class="feature-box">
+<div class="feature-icon">
+<i class="fas fa-mobile-alt"></i>
+</div>
+<h3>Mobile Optimized</h3>
+<p>Analyze deals on the go with our fully responsive design that works on any device.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+<div class="container">
+<div class="section-header">
+<h2>HOW <span class="text-gradient">IT WORKS</span></h2>
+<p>Simple, powerful, and designed for real estate wholesalers</p>
+</div>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-search"></i>
+</div>
+<div class="timeline-content">
+<h3>Find Properties</h3>
+<p>Enter property details or search by address to begin your analysis.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-calculator"></i>
+</div>
+<div class="timeline-content">
+<h3>Analyze the Deal</h3>
+<p>Our calculator instantly provides MAO, repair estimates, and profit projections.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-file-alt"></i>
+</div>
+<div class="timeline-content">
+<h3>Generate Reports</h3>
+<p>Create professional reports to share with potential buyers and investors.</p>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">
+<i class="fas fa-handshake"></i>
+</div>
+<div class="timeline-content">
+<h3>Close Deals</h3>
+<p>Use the data to negotiate confidently and close more profitable deals.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Calculator Preview Section -->
+<section class="calculator-preview">
+<div class="container">
+<div class="section-header">
+<h2>POWERFUL <span class="text-gradient">CALCULATOR</span></h2>
+<p>See how the Zeus Deal Analyzer will transform your wholesaling business</p>
+</div>
+<div class="calculator-demo">
+<div class="calculator-container card-gradient">
+<div class="calculator-header">
+<h3>Deal Analysis Calculator</h3>
+</div>
+<div class="calculator-body">
+<div class="form-group">
+<label class="form-label">Property Address</label>
+<div class="input-icon">
+<i class="fas fa-map-marker-alt"></i>
+<input type="text" class="form-control" placeholder="Enter property address" disabled>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label class="form-label">After Repair Value (ARV) </label>
+<div class="input-icon">
+<i class="fas fa-dollar-sign"></i>
+<input type="text" class="form-control" placeholder="250,000" disabled>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Repair Costs</label>
+<div class="input-icon">
+<i class="fas fa-tools"></i>
+<input type="text" class="form-control" placeholder="35,000" disabled>
+</div>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label class="form-label">Desired Profit</label>
+<div class="input-icon">
+<i class="fas fa-chart-line"></i>
+<input type="text" class="form-control" placeholder="15,000" disabled>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Holding Costs</label>
+<div class="input-icon">
+<i class="fas fa-clock"></i>
+<input type="text" class="form-control" placeholder="5,000" disabled>
+</div>
+</div>
+</div>
+<div class="calculator-results">
+<div class="result-item">
+<h4>Maximum Allowable Offer</h4>
+<p class="result-value text-gradient">$125,000</p>
+</div>
+<div class="result-item">
+<h4>Potential Profit</h4>
+<p class="result-value text-gradient">$15,000</p>
+</div>
+</div>
+</div>
+<div class="calculator-footer">
+<button class="btn btn-primary btn-block" disabled>Full Analysis Available After Launch</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+<div class="container">
+<div class="section-header">
+<h2>SIMPLE <span class="text-gradient">PRICING</span></h2>
+<p>Affordable plans for wholesalers at every stage</p>
+</div>
+<div class="pricing-toggle-container">
+<span>Monthly</span>
+<label class="switch">
+<input type="checkbox" id="pricing-toggle">
+<span class="slider round"></span>
+</label>
+<span>Annual <span class="badge-accent">Save 20%</span></span>
+</div>
+<div class="pricing-grid">
+<div class="pricing-card card-gradient">
+<div class="pricing-header">
+<h3>Starter</h3>
+<div class="price">
+<span class="currency">$</span>
+<span class="amount">29</span>
+<span class="period">/month</span>
+</div>
+<p>Perfect for new wholesalers</p>
+</div>
+<div class="pricing-body">
+<ul class="pricing-features">
+<li><i class="fas fa-check"></i> Basic Deal Analysis</li>
+<li><i class="fas fa-check"></i> MAO Calculator</li>
+<li><i class="fas fa-check"></i> 10 Deals Per Month</li>
+<li><i class="fas fa-check"></i> Basic Reports</li>
+<li><i class="fas fa-check"></i> Email Support</li>
+<li class="disabled"><i class="fas fa-times"></i> Comps Analysis</li>
+<li class="disabled"><i class="fas fa-times"></i> White-Label Reports</li>
+<li class="disabled"><i class="fas fa-times"></i> Advanced Analytics</li>
+</ul>
+</div>
+<div class="pricing-footer">
+<a href="#waitlist" class="btn btn-secondary btn-block subscribe-btn" data-plan="starter">Join Waitlist</a>
+</div>
+</div>
+<div class="pricing-card card-gradient featured">
+<div class="pricing-badge">Most Popular</div>
+<div class="pricing-header">
+<h3>Professional</h3>
+<div class="price">
+<span class="currency">$</span>
+<span class="amount">79</span>
+<span class="period">/month</span>
+</div>
+<p>For serious wholesalers</p>
+</div>
+<div class="pricing-body">
+<ul class="pricing-features">
+<li><i class="fas fa-check"></i> Advanced Deal Analysis</li>
+<li><i class="fas fa-check"></i> MAO Calculator</li>
+<li><i class="fas fa-check"></i> Unlimited Deals</li>
+<li><i class="fas fa-check"></i> Professional Reports</li>
+<li><i class="fas fa-check"></i> Priority Support</li>
+<li><i class="fas fa-check"></i> Comps Analysis</li>
+<li><i class="fas fa-check"></i> White-Label Reports</li>
+<li class="disabled"><i class="fas fa-times"></i> Advanced Analytics</li>
+</ul>
+</div>
+<div class="pricing-footer">
+<a href="#waitlist" class="btn btn-accent btn-block subscribe-btn" data-plan="professional">Join Waitlist</a>
+</div>
+</div>
+<div class="pricing-card card-gradient">
+<div class="pricing-header">
+<h3>Enterprise</h3>
+<div class="price">
+<span class="currency">$</span>
+<span class="amount">149</span>
+<span class="period">/month</span>
+</div>
+<p>For wholesaling teams</p>
+</div>
+<div class="pricing-body">
+<ul class="pricing-features">
+<li><i class="fas fa-check"></i> Advanced Deal Analysis</li>
+<li><i class="fas fa-check"></i> MAO Calculator</li>
+<li><i class="fas fa-check"></i> Unlimited Deals</li>
+<li><i class="fas fa-check"></i> Professional Reports</li>
+<li><i class="fas fa-check"></i> 24/7 Support</li>
+<li><i class="fas fa-check"></i> Comps Analysis</li>
+<li><i class="fas fa-check"></i> White-Label Reports</li>
+<li><i class="fas fa-check"></i> Advanced Analytics</li>
+</ul>
+</div>
+<div class="pricing-footer">
+<a href="#waitlist" class="btn btn-secondary btn-block subscribe-btn" data-plan="enterprise">Join Waitlist</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+<div class="container">
+<div class="section-header">
+<h2>WHAT <span class="text-gradient">WHOLESALERS</span> SAY</h2>
+<p>Join hundreds of successful real estate wholesalers</p>
+</div>
+<div class="testimonials-slider">
+<div class="testimonial-card card-glass">
+<div class="testimonial-content">
+<p>"The Zeus Deal Analyzer has completely transformed how I evaluate properties. I'm able to make offers with confidence knowing my numbers are solid."</p>
+</div>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>Michael Johnson</h4>
+<p>Real Estate Wholesaler</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card card-glass">
+<div class="testimonial-content">
+<p>"I've closed 15 deals in the last 3 months using this calculator. The professional reports really help me stand out when presenting deals to my buyers."</p>
+</div>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>Sarah Williams</h4>
+<p>Wholesaling Business Owner</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card card-glass">
+<div class="testimonial-content">
+<p>"As a new wholesaler, this tool has been invaluable. It's like having a mentor guiding me through each deal analysis. Worth every penny!"</p>
+</div>
+<div class="testimonial-author">
+<div class="author-info">
+<h4>David Chen</h4>
+<p>New Real Estate Investor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Waitlist Section -->
+<section id="waitlist" class="waitlist">
+<div class="container">
+<div class="waitlist-content">
+<h2>JOIN THE <span class="text-gradient">WAITLIST</span></h2>
+<p class="lead">Be the first to know when the Zeus Deal Analyzer launches. Early subscribers will receive exclusive discounts and bonuses.</p>
+<div class="waitlist-form card-gradient">
+<form id="waitlist-form">
+<div class="form-row">
+<div class="form-group">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+</div>
+<div class="form-group">
+<label class="form-label">Email Address</label>
+<input type="email" class="form-control" id="email" placeholder="Your Email" required>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Experience Level</label>
+<select class="form-control" id="experience">
+<option value="">Select your experience level</option>
+<option value="beginner">Beginner (0-1 years)</option>
+<option value="intermediate">Intermediate (1-3 years)</option>
+<option value="advanced">Advanced (3+ years)</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">What features are you most interested in?</label>
+<textarea class="form-control" id="interests" rows="3" placeholder="Tell us what you're looking for..."></textarea>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-accent btn-block btn-icon">
+<span>Join the Waitlist</span>
+<i class="fas fa-rocket"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="waitlist-image">
+<div class="image-container float">
+<!-- Waitlist image will be added here -->
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+<div class="container">
+<div class="section-header">
+<h2>FREQUENTLY <span class="text-gradient">ASKED</span> QUESTIONS</h2>
+<p>Everything you need to know about the Zeus Deal Analyzer</p>
+</div>
+<div class="faq-grid">
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>When will the Zeus Deal Analyzer launch?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>We're currently in the final stages of development and plan to launch within the next 30 days. Join our waitlist to be the first to know when we go live!</p>
+</div>
+</div>
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>Is there a free trial available?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>Yes! We offer a 14-day free trial on all plans so you can test the full functionality before committing to a subscription.</p>
+</div>
+</div>
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>Can I cancel my subscription at any time?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>Absolutely. There are no long-term contracts, and you can cancel your subscription at any time with no cancellation fees.</p>
+</div>
+</div>
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>How accurate are the comps and ARV estimates?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>Our comps and ARV estimates are pulled from reliable data sources and are typically very accurate. However, we always recommend verifying with your own local market knowledge.</p>
+</div>
+</div>
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>Can I use the calculator on my mobile device?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>Yes! The Zeus Deal Analyzer is fully responsive and works on all devices including smartphones, tablets, and desktop computers.</p>
+</div>
+</div>
+<div class="faq-item card-glass">
+<div class="faq-question">
+<h3>Do you offer any discounts for annual subscriptions?</h3>
+<span class="faq-toggle"><i class="fas fa-plus"></i></span>
+</div>
+<div class="faq-answer">
+<p>Yes, we offer a 20% discount when you choose annual billing. This option will be available when we launch.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+<div class="container">
+<div class="cta-content">
+<h2>READY TO <span class="text-gradient">REVOLUTIONIZE</span> YOUR WHOLESALING BUSINESS?</h2>
+<p class="lead">Join the waitlist today and be the first to access the Zeus Deal Analyzer when we launch.</p>
+<a href="#waitlist" class="btn btn-accent btn-lg btn-icon">
+<span>Join the Waitlist</span>
+<i class="fas fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="#" class="footer-logo">
+<span class="text-gradient">Zeus</span> Deal Analyzer
+</a>
+<p>A powerful tool to help wholesalers analyze deals and make informed investment decisions.</p>
+<div class="social-links">
+<a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+<a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+<a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+</div>
+</div>
+<div class="footer-links">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#how-it-works">How It Works</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#waitlist">Join Waitlist</a></li>
+</ul>
+</div>
+<div class="footer-links">
+<h3>Resources</h3>
+<ul>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Tutorials</a></li>
+<li><a href="#">Support</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-newsletter">
+<h3>Stay Updated</h3>
+<p>Subscribe to our newsletter for the latest updates and exclusive content.</p>
+<form class="newsletter-form">
+<input type="email" class="form-control" placeholder="Your Email" required>
+<button type="submit" class="btn btn-primary">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2025 Zeus Deal Analyzer. All rights reserved.</p>
+<div class="footer-bottom-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Success Modal -->
+<div class="modal" id="success-modal">
+<div class="modal-content card-gradient">
+<span class="modal-close">&times;</span>
+<div class="modal-body">
+<div class="success-icon">
+<i class="fas fa-check-circle"></i>
+</div>
+<h3>Thank You for Joining!</h3>
+<p>You've been added to our waitlist. We'll notify you as soon as the Zeus Deal Analyzer launches.</p>
+<p class="small">Check your email for a confirmation message.</p>
+<button class="btn btn-primary btn-block modal-close-btn">Close</button>
+</div>
+</div>
+</div>
+
+<!-- Subscription Modal -->
+<div class="modal" id="subscription-modal">
+<div class="modal-content card-gradient">
+<span class="modal-close">&times;</span>
+<div class="modal-body">
+<h3>Complete Your Subscription</h3>
+<p>You're almost there! Fill out the information below to complete your subscription.</p>
+<form id="subscription-form">
+<div class="form-group">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control" id="sub-name" placeholder="Your Name" required>
+</div>
+<div class="form-group">
+<label class="form-label">Email Address</label>
+<input type="email" class="form-control" id="sub-email" placeholder="Your Email" required>
+</div>
+<div class="form-group">
+<label class="form-label">Selected Plan</label>
+<select class="form-control" id="sub-plan" required>
+<option value="starter">Starter - $29/month</option>
+<option value="professional">Professional - $79/month</option>
+<option value="enterprise">Enterprise - $149/month</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Payment Method</label>
+<div class="payment-methods">
+<div class="payment-method">
+<input type="radio" name="payment-method" id="payment-card" value="card" checked>
+<label for="payment-card">
+<i class="fas fa-credit-card"></i>
+Credit Card
+</label>
+</div>
+<div class="payment-method">
+<input type="radio" name="payment-method" id="payment-paypal" value="paypal">
+<label for="payment-paypal">
+<i class="fab fa-paypal"></i>
+PayPal
+</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-accent btn-block">
+Complete Subscription
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/subscription.js"></script>
+</body>
+</html>
